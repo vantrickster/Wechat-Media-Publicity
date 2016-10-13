@@ -1,0 +1,398 @@
+/*工具栏*/
+.ke-container-nowcoder{
+    position: relative;
+    overflow: visible;
+}
+.ke-container-nowcoder .ke-toolbar{
+    background: #f5f5f5;
+    padding: 8px 10px;
+    margin: 0;
+    overflow: visible;
+    height: 22px;
+}
+.ke-dialog-nowcoder input {
+    width: auto;
+}
+.ke-dialog-nowcoder input[type="text"].ke-input-text{
+    border-width: 1px;
+    padding: 2px 4px;
+    width: auto;
+    font-size: 12px;
+}
+.ke-dialog-nowcoder input[type="text"].ke-input-number{
+    width: 50px;
+}
+.ke-dialog-nowcoder label{
+    font-size: 12px;
+}
+
+/*底部状态栏*/
+.ke-container-nowcoder .ke-statusbar{
+    display: none;
+}
+
+/* tool bar fixed */
+.fixed-eidt-header.ke-container-nowcoder {
+    padding-top: 39px;
+}
+.fixed-eidt-header.ke-container-nowcoder .ke-toolbar {
+    position: fixed;
+    top: 55px;
+    border: 1px solid #ccc;
+    margin: -1px;
+    width: 628px;
+    z-index: 9;
+}
+
+
+/* 华鑫，下面的代码拷过去就行 */
+/*工具栏*/
+.ke-toolbar .btn-group {
+    float: left;
+    margin: -2px 0 -6px -5px;
+}
+.ke-toolbar .ke-outline {
+    border-color:#f5f5f5;
+}
+.ke-container-nowcoder .ke-toolbar .ke-outline{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ke-container-nowcoder .ke-toolbar-icon-url{
+    background-image: url(/images/img/editor/editorIco2.png);
+}
+
+.ke-container-nowcoder .ke-toolbar .ke-selected,
+.ke-container-nowcoder .ke-toolbar .ke-on{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f8f8f8
+}
+.ke-container-nowcoder .ke-toolbar .ke-separator{
+    border-left: 1px solid #c2c2c2;
+    border-right: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px;
+    margin-top: 0;
+}
+.ke-container-nowcoder .ke-icon-bold{
+    background-position: 2px 1px;
+}
+.ke-container-nowcoder .ke-icon-italic{
+    background-position: 3px -29px;
+}
+
+.ke-container-nowcoder .ke-icon-underline{
+    background-position: 3px -57px;
+}
+
+.ke-container-nowcoder .ke-icon-bockquote{
+    background-position: 0 -85px;
+    width: 16px;
+    height: 16px;
+}
+
+.ke-container-nowcoder .ke-icon-codeblock{
+    background-position: 0 -111px;
+    width: 16px;
+    height: 16px;
+}
+
+.ke-container-nowcoder .ke-icon-insertorderedlist{
+    background-position: 0 -137px;
+}
+
+.ke-container-nowcoder .ke-icon-insertunorderedlist{
+    background-position: 0 -163px;
+}
+
+.ke-container-nowcoder .ke-icon-image,
+.ke-container-nowcoder .ke-icon-multiimage{
+    background-position: 1px -217px;
+}
+
+.ke-container-nowcoder .ke-icon-removeformat{
+    background-position: 1px -244px;
+}
+/* styles/common/widget/editor.css */
+.point-box {
+    padding: 15px 20px;
+}
+
+.point-box .point-area {
+    width: 98%;
+    max-width: 98%;
+    padding: 0.5% 1%;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-size: 14px;
+    height: 70px;
+    border: none;
+}
+.point-area-box {
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.point-box .point-btn {
+    float: right;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.full-ico {
+    background: url(/images/img/fullscreen-ico2.png) 0 0 no-repeat;
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.full-ico:hover {
+    background-position: 0 -22px;
+}
+/* 编辑器 */
+.editor-box {
+    position: relative;
+}
+.label-editor {
+    margin-bottom: 20px;
+}
+.label-editor .txt-area {
+    width: 93%;
+}
+.txt-title {
+    color: #666;
+    float: left;
+    font-size: 16px;
+
+    line-height: 22px;
+    padding: 5px 0 5px 5px;
+}
+.eidt-area-tool {
+    background: #f0f0f0;
+    padding: 5px;
+    margin: 2px;
+}
+.eidtorToolItem,
+.eidtorToolItem li {
+    float: left;
+}
+.eidtorToolItem li{
+    margin-right: 15px;
+    padding-top: 3px;
+}
+.eidtorToolItem a,
+.ico-to-html {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background: url(/images/img/editor/editorIco2.png) no-repeat;
+}
+.eidtorToolItem .eidtorB {
+    background-position: 3px 0;
+}
+.eidtorToolItem .eidtorI {
+    background-position: 3px -30px;
+}
+.eidtorToolItem .eidtorU {
+    background-position: 3px -58px;
+}
+.eidtorToolItem .eidtorCite {
+    background-position: 0 -86px;
+}
+.eidtorToolItem .eidtorBrackets {
+    background-position: 0 -112px;
+}
+.eidtorToolItem .eidtorOl {
+    background-position: 0 -138px;
+}
+.eidtorToolItem .eidtorUl {
+    background-position: 0 -164px;
+}
+.eidtorToolItem .eidtorFormula {
+    background-position: 0 -190px;
+}
+.eidtorToolItem .eidtorImg {
+    background-position: 0 -218px;
+}
+.eidtorToolItem .eidtorT {
+    background-position: 0 -244px;
+}
+.ke-icon-source {
+    background-position: 0 -438px;
+}
+.ke-icon-preview {
+    background-position: 0 -472px;
+}
+.ke-icon-link {
+    background-position: 0 -272px;
+}
+.ke-icon-subscript {
+    background-position: 0 -535px;
+}
+.ke-icon-superscript {
+    background-position: 0 -568px;
+}
+.ke-icon-table {
+    background-position: 0 -505px;
+}
+.ke-icon-code {
+    background-position: 0 -302px;
+}
+.ke-icon-undo {
+    background-position: 0 -357px;
+}
+.ke-icon-redo {
+    background-position: 0 -382px;
+}
+.ke-icon-line {
+    background-position: 0 -330px;
+    width: 16px;
+    height: 16px;
+}
+.ke-icon-help {
+    background-position: 0 -407px;
+    width: 16px;
+    height: 16px;
+}
+.editorToolPipe {
+    background: #CCC;
+    float: left;
+    margin-right: 20px;
+    width: 1px;
+    height: 20px;
+}
+
+.ico-to-html,
+.ico-to-html:hover {
+    float: right;
+    width: auto;
+    padding-left: 20px;
+    background-position: 0 -596px;
+    line-height: 22px;
+    height: auto;
+    cursor: pointer;
+    color: #333;
+}
+.ke-toolbar .btn-group-sm .dropdown-toggle,
+.ke-toolbar .btn-group-sm .dropdown-menu {
+    font-size: 12px;
+}
+.ke-toolbar .btn-group .dropdown-toggle {
+    min-width: 70px;
+    padding: 4px;
+}
+.ke-toolbar .btn-group .caret {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    font-size: 14px;
+}
+
+.ke-toolbar .dropdown-value {
+    width: 50px;
+}
+.btn-group.more-icons .dropdown-toggle {
+    min-width: 55px;
+}
+.ke-toolbar .dropdown-menu .ke-outline {
+    border: none;
+    margin: 3px;
+}
+.ke-toolbar .btn-group.more-icons {
+    margin-left: 10px;
+}
+.more-icons .dropdown-value {
+    width: 35px;
+}
+
+/* 展开收起 */
+.fold-textarea,
+.unfold-textarea {
+    display: block;
+    width: 16px;
+    height: 100%;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    cursor: pointer;
+    background:#e1e1e1 url(/images/img/editor/arrow.png) 4px center no-repeat;
+}
+.fold-textarea {
+    background-position: -16px center;
+    height: 100%;
+    margin-top: 0;
+    top: 0;
+    right: 0;
+    left: auto;
+}
+.ico-to-markdown {
+    float: right;
+    cursor: pointer;
+    line-height: 22px;
+}
+.txt-area-box {
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #FFF;
+}
+.editor-box .editor-btn {
+    float: right;
+    text-align: center;
+}
+.txt-area {
+    height: 70px;
+    width: 98%;
+    padding: 0.5% 1%;
+    line-height: 1.5;
+    font-size: 14px;
+    border: none;
+    resize:none;
+}
+.txtarea-foot {
+    margin-top: 20px;
+}
+
+.txtarea-tool {
+    float: left;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.txtarea-tool li {
+    float: left;
+    margin-right: 20px;
+}
+.txtarea-tool a {
+    display: block;
+    outline: none;
+    text-indent: -9999em;
+    background: url(/images/img/editarea-icon.png) no-repeat;
+}
+.txtarea-tool .font-ico {
+    background-position: 0 0;
+    width: 20px;
+    height: 18px;
+}
+.txtarea-tool .img-ico {
+    width: 22px;
+    height: 18px;
+    background-position: 0 -38px;
+}
+.txtarea-tool .font-ico:hover {
+    background-position: 0 -77px;
+}
+.txtarea-tool .img-ico:hover {
+    background-position: 0 -114px;
+}
+
+.ke-md-textarea {
+    padding: 5px;
+    line-height: 1.8;
+    font-size: 14px;
+}
